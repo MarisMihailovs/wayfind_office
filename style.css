@@ -37,6 +37,11 @@ body {
     animation-delay: 1s;
 }
 
+#layer1 {
+    transform: translateX(-20px);
+    animation: sway 3s ease infinite;
+}
+
 @keyframes blink {
     0% {
         opacity: 0;
@@ -49,5 +54,20 @@ body {
     /* Optionally, you can add a midpoint to the animation */
     100% {
         opacity: 0;
+    }
+}
+
+@keyframes sway {
+    0% {
+        transform: translateX(-20px);
+    }
+
+    50% {
+        transform: translateX(0px);
+    }
+
+    /* Optionally, you can add a midpoint to the animation */
+    100% {
+        transform: translateX(-20px);
     }
 }
